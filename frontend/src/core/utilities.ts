@@ -13,7 +13,7 @@ export const arrayFind = (
 
 export const isValidUrl = (url: string): boolean => {
   const pattern = new RegExp(
-    "^(https?:\\/\\/)?((([a-z\\d]([a-z\\d-]*[a-z\\d])*)\\.)+[a-z]{2,})",
+    "^(https?:\\/\\/)?((([a-z\\d]([a-z\\d-]*[a-z\\d])*)\\.)+[a-z]{2,})$",
     "i"
   );
   return !!pattern.test(url);
