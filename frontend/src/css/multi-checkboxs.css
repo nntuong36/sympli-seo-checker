@@ -1,0 +1,8 @@
+.multi-checkbox {
+    margin: 5px;
+}
+
+.multi-checkbox .error-text{
+    color: red;
+    margin-left: 5px;
+}

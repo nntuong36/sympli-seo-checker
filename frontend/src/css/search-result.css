@@ -1,0 +1,34 @@
+.search-result {
+    padding-left: 10px;
+}
+
+ul {
+    list-style-type: none;
+    padding-inline-start: 10px;
+}
+
+ul li span.rank-number {
+    position: absolute;
+    border: 3px solid #d0021b;
+    padding: 6px 5px;
+    color: #d0021b;
+    font-size: 13px;
+    font-weight: bold;
+    border-radius: 50%;
+    width: 22px;
+    height: 20px;
+    text-align: center;
+}
+
+ul>li>ul>li {
+    padding-bottom: 20px;
+}
+
+ul li span.url {
+    padding-left: 45px;
+}
+
+.information-text {
+    color: gray;
+    font-style: italic;
+}
