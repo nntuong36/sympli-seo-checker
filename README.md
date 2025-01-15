@@ -29,3 +29,14 @@ Update API host in `src\environment.ts` file. Current setup it is `http://localh
 
 - Submit the valid values, the search ranking will be responsed.
 ![Search ranking response](assets/3.fe-response.png)
+
+## 4. To do list
+- Back end
+  - Add new controller to get all available search engines types
+- Front end
+  - Fetch all search engine types and load `Search Engines` automatically (Not fixed hard code).
+- Unit test, it should be added more unit test on
+  - Validation in `FluentValidator`
+  - Google and Bing `pattern` to get `href`
+  - Should add unit test on `Service.Helpers` with the function `GetMatchedUrlRankings` and `GetHrefsFromHtmlContent`
+  - `CommonUtility` function such as `IsValidUrl`, `IsValidEnum`, `GetErrorMessage`, `CalcPagesCount`

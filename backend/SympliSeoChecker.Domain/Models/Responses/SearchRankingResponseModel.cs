@@ -6,7 +6,6 @@ namespace SympliSeoChecker.Domain.Models.Responses
     {
         public SearchEngineType SearchEngine { get; set; }
         public string SearchEngineName { get; set; }
-
         public IEnumerable<RankingResponseModel> Rankings { get; set; }
     }
 }

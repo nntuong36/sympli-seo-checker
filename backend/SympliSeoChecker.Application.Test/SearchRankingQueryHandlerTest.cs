@@ -59,8 +59,12 @@ namespace SympliSeoChecker.Application.Test
             var googleSearchEngineMock = Substitute.For<ISearchEngineService>();
             var bingSearchEngineMock = Substitute.For<ISearchEngineService>();
 
-            googleSearchEngineMock.GetSearchRankingAsync(searchRankingQuery.Keyword, searchRankingQuery.Url).Returns(Task.FromResult(googleSearchResult));
-            bingSearchEngineMock.GetSearchRankingAsync(searchRankingQuery.Keyword, searchRankingQuery.Url).Returns(Task.FromResult(bingSearchResult));
+            googleSearchEngineMock
+                .GetSearchRankingAsync(searchRankingQuery.Keyword, searchRankingQuery.Url)
+                .Returns(Task.FromResult(googleSearchResult));
+            bingSearchEngineMock
+                .GetSearchRankingAsync(searchRankingQuery.Keyword, searchRankingQuery.Url)
+                .Returns(Task.FromResult(bingSearchResult));
 
             _searchEngineFactoryMock.Create(SearchEngineType.Google).Returns(googleSearchEngineMock);
             _searchEngineFactoryMock.Create(SearchEngineType.Bing).Returns(bingSearchEngineMock);
