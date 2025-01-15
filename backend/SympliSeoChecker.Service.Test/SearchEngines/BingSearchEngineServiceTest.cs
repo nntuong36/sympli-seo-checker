@@ -27,7 +27,7 @@ namespace SympliSeoChecker.Service.Test.SearchEngines
             string keywords = "E-Settlement";
             string url = "https://www.gov.uk/";
 
-            // Set up mock responses for 10 pages of search results
+            // Set up mock responses
             for (int i = 0; i < 10; i++)
             {
                 _mockHttpMessageHandler.SetupResponse(
